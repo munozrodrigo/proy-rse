@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AmbitosModule } from './ambitos/ambitos.module';
 import { SharedModule } from './shared/shared.module';
 import { AdminModule } from './admin/admin.module';
-import { PagesModule } from './pages/pages.module';
+import { HomeModule } from './home/home.module';
 import { FacultadesModule } from './facultades/facultades.module';
 
 
@@ -22,7 +22,7 @@ import { FacultadesModule } from './facultades/facultades.module';
     BrowserAnimationsModule,
     AmbitosModule,
     AdminModule,
-    PagesModule,
+    HomeModule,
     SharedModule,
     FacultadesModule
   ],

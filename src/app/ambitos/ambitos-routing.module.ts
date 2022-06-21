@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AmbitHomeComponent } from './pages/ambit-home/ambit-home.component';
-import { RectoradoComponent } from './pages/rectorado/rectorado.component';
 
 const routes: Routes = [
     {
@@ -9,8 +8,7 @@ const routes: Routes = [
         component: AmbitHomeComponent,
         children:[
         {
-            path:'rectorado',
-            component: RectoradoComponent
+
         }
     ],
     }

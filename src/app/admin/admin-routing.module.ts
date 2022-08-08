@@ -4,13 +4,13 @@ import { AdmHomeComponent } from './pages/adm-home/adm-home.component';
 
 const routes: Routes = [
     {
-        path:'',
-        component: AdmHomeComponent ,
-        children:[
-        {
-            path:'ui',
-            component: AdmHomeComponent
-        }
+      path:'',
+      component: AdmHomeComponent ,
+      pathMatch: 'full',
+      children:[
+      {
+
+      }
     ],
     }
 ];

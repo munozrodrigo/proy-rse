@@ -9,7 +9,9 @@ const routes: Routes = [
       pathMatch: 'full',
       children:[
       {
-
+        path: '',
+        redirectTo: '/admin',
+        pathMatch: 'full'
       }
     ],
     }

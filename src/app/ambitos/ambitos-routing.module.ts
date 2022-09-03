@@ -4,11 +4,14 @@ import { AmbitHomeComponent } from './pages/ambit-home/ambit-home.component';
 
 const routes: Routes = [
     {
-        path:'',
-        component: AmbitHomeComponent,
-        children:[
-        {
-
+      path:'',
+      component: AmbitHomeComponent,
+      pathMatch: 'full',
+      children:[
+        { 
+          path: '',
+          redirectTo: '/ambitos',
+          pathMatch: 'full'
         }
     ],
     }

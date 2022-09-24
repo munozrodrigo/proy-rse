@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -12,12 +11,24 @@
   }
 }
 
+:root {
+  --main-color: #056F57;
+  --sec-ext-color: #781A1A;
+  --facu-derecho-color: #781A1A;
+  --facu-econom-color: #1B3B82;
+  --facu-medicas-color: #2A8B22;
+  --facu-educ-color: #DE6E00;
+  --facu-filo-color: #E31E24;
+  --facu-alim-color: #07858A;
+  --esc-seg-color: #021233;
+  --esc-form-color: #FEED00;
+}
+
 
 html{ height: 100%; }
 body { 
     margin: 0; 
     font-family: Roboto, "Helvetica Neue", sans-serif;
-    height: 100%;
     margin: 0;
     font-family: var(--bs-body-font-family);
     font-size: var(--bs-body-font-size);

@@ -1,0 +1,60 @@
+.main-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.containerALL{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidenav {
+    height: 70%;
+    background-color: var(--main-color);
+    padding-top: 20px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+img{
+    padding: 2rem;
+}
+
+.btn{
+    margin-top: 10px
+}
+
+.btnlow{
+    padding: 2rem;
+}
+
+.main01{
+    display: flex;
+    height: 70%;
+    width: 70%;
+    padding: 62px;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.login-main-text{
+    padding: 1rem 3rem 3rem 3rem;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.login-form{
+    margin-top: 10%;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}

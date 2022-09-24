@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Error404Component } from './shared/error404/error404.component';
-import { RedirectLogGuard } from './shared/guards/redirectLog.guard';
+
 
 
 const routes: Routes = [
@@ -18,15 +18,9 @@ const routes: Routes = [
     loadChildren: () => import('./admin/admin.module'). then (m => m.AdminModule)
   },
   {
-    path: "404",
-    component: Error404Component
-  },
-  {
     path:'',
     pathMatch: 'full',
-    //children:[],
     redirectTo: '/login'
-    //canActivate: [RedirectLogGuard]
   }
 ];
 

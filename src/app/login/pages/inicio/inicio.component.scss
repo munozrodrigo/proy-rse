@@ -1,0 +1,21 @@
+/* Botones de entradas de estilos utilizados en páginas de descripción de películas.*/
+
+.button-container {
+  display: inline-block;
+  position: relative;
+}
+
+img {
+  float: left;
+}
+
+button {
+  position: absolute;
+  bottom: 50%;
+  right: 40em;
+  background-color: #008f1f;
+  border-radius: 1.5em;
+  color: white;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+}

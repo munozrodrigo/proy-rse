@@ -1,34 +1,46 @@
 <div class="main-container">
-    <div class="containerALL">
-        <div class="sidenav">
-            <img src="assets/iconos/logo-uccuyosj.png" alt="">
-            <div class="login-main-text">
-               <h2>Rectorado<br> Login</h2>
-               <p>Ingresa desde aquí.</p>
+  <div class="containerALL">
+    <div class="sidenav">
+      <img src="assets/iconos/logo-uccuyosj.png" alt="" />
+      <div class="login-main-text">
+        <h2>
+          Rectorado<br />
+          Login
+        </h2>
+        <p>Ingresa desde aquí.</p>
+      </div>
+      <div class="btnlow">
+        <button routerLink="" class="btn btn-black">Volver</button>
+      </div>
+    </div>
+    <div class="main01">
+      <div class="col-sm-12">
+        <div class="login-form">
+          <form [formGroup]="loginForm" (ngSumbit)="loginUser()">
+            <div class="form-group">
+              <label>Nombre de Usuario</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Usuario"
+                formControlName="user"
+                required
+              />
             </div>
-            <div class="btnlow">
-               <button routerLink="" class="btn btn-black">Volver</button>
+            <div class="form-group">
+              <label>Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Contraseña"
+                formControlName="password"
+                required
+              />
             </div>
+            <button class="btn btn-black" (click)="loginUser()">Login</button>
+          </form>
         </div>
-         <div class="main01">
-            <div class="col-sm-12">
-               <div class="login-form">
-                  <form [formGroup]="loginForm" (ngSumbit)="loginUser()">
-                     <div class="form-group">
-                        <label>Nombre de Usuario</label>
-                        <input type="text" class="form-control" placeholder="Usuario" 
-                        formControlName="user" required>
-                     </div>
-                     <div class="form-group">
-                        <label>Contraseña</label>
-                        <input type="password" class="form-control" placeholder="Contraseña" 
-                        formControlName="password" required>
-                     </div>
-                     <button class="btn btn-black" (click)="loginUser()">Login</button>
-                  </form>
-               </div>
-            </div>
-         </div>
-     </div>
+      </div>
+    </div>
+  </div>
 </div>
-
